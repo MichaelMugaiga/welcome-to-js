@@ -3,20 +3,19 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: chrome browser Version 105.0.5195.125 (Official Build) (64-bit)
 
-  name:
-  message:
+  name: Refernce Error
+  message: welf not defined
 
-  location:
+  location: line 20
 
-  life cycle:
+  life cycle: execution phase
 
-  the mistake:
+  the mistake: forgot to declare the variable welf
 
-  the fix(es):
-*/
+  the fix(es): we can use var, let or const to fix the error
 
-welf = 'ingrad';
+var welf = 'ingrad';
 
 console.log(welf);

@@ -3,28 +3,27 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: chrome browser Version 105.0.5195.125 (Official Build) (64-bit)
 
-  name:
-  message:
+  name: Reference Error
+  message: isValidUserName
 
-  location:
+  location: line 24 column 19
 
-  life cycle:
+  life cycle: before initialization
 
-  the mistake:
+  the mistake: variable is not initialized and in the wrong place
 
-  the fix(es):
+  the fix(es): initialize variable before using it 
 */
 
 const userName = 'chiobin';
 console.log('userName:', typeof userName, userName);
+let isValidUserName;
 
 if (userName.length > 3) {
   isValidUserName = true;
 }
-
-let isValidUserName;
 
 if (userName.length <= 3) {
   isValidUserName = false;
