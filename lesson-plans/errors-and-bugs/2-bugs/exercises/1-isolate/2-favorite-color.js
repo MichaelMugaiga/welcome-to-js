@@ -7,7 +7,12 @@
     'JavaScript' -> 'you entered "JavaScript"'
 
   experiment 1
-    line:
+    line: 21
+    why:
+    trying:
+
+  experiment 2
+    line: 22
     why:
     trying:
 
@@ -18,8 +23,8 @@ let message = 'you entered "';
 while (true) {
   const input = prompt('enter something');
 
-  if (input === null && input.length === 0) {
-    message = input + '"';
+  if (input !== null && input.length > 0) {
+    message = message + input + '"';
     break;
   }
 }
